@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <title>T&Land</title>
+</head>
+<body>
+
+    <div class="topnav">
+        <a  href="/">Home</a>
+        <a class="active" href="/upload">Upload file</a>
+    </div>
+  
+    <div class="upload-file-container">
+        <form action="/upload-profile-pic" enctype="multipart/form-data" method="POST">
+            <div>
+                <label>Avatar:</label>
+                <input type="file" name="profile_pic" id="">
+            </div>
+          
+            <div>
+                <button class="btn-save" type="submit" name="btn_sigle-image">Save File</button>
+            </div>
+        </form>
+    </div>
+
+    <div class="upload-file-container">
+        <form action="/upload-multiple-images" enctype="multipart/form-data" method="POST">
+            <div>
+                <label>Avatar multiple:</label>
+                <input type="file" name="multiple_images" id="" multiple>
+            </div>
+          
+            <div>
+                <button class="btn-save" type="submit" name="btn_multiple-images">Save File</button>
+            </div>
+        </form>
+    </div>
+
+</body>
+</html>
